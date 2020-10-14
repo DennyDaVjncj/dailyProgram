@@ -16,8 +16,9 @@ function presentMoment(){
     //gets reproduced winthin .each() upon click of element tagged by #id,.class or whatever
 
 function dynamicDivs(nowBlock){
-    let nowBlock=$("#dynamicMutation");//div element, clientSide
-    nowBlock.each().on("click",function(){
+    nowBlock.$("#dynamicMutation");//div element, clientSide
+    console.log(nowBlock)
+    nowBlock.each(this).on("click",function(){
         $(this).append();//append new div elements
-    });//figure out how to loop through    
+    });//figure out how to loop through 
 }
