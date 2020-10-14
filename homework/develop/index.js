@@ -1,4 +1,5 @@
-let now=require('moment');//fulfilled requirement
-let nowclient=moment().format('dddd');
+let now=moment();//fulfilled requirement
+let nowDisplayed=moment().format('dddd');
 
-$()
+//target empty paragraph element in jumbotron for moment.js use
+let p=$('#currentDay')
