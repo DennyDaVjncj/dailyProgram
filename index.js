@@ -17,5 +17,7 @@ function presentMoment(){
 
 function dynamicDivs(nowBlock){
     let nowBlock=$("#dynamicMutation");//div element, clientSide
-    
+    nowBlock.each().on("click",function(){
+        $(this).append();//append new div elements
+    });//figure out how to loop through    
 }
