@@ -1,2 +1,2 @@
 # dailyProgram
-a client-side app that will allow user to program daily activity, logging completed tasks, adding new ones &amp; viewing future events even
+client-side app that will allow a user to program daily activity, logging completed tasks, adding new ones &amp; viewing future tasks even. The user will have a dynamic interface allowing them to generate hour blocks as needed...
