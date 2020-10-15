@@ -39,7 +39,7 @@ textarea{
 .hour {
   background-color: #ffffff;
   color: #000000;
-  border-top: 1px dashed #000000;
+  border-top: 1px dashed #000000;  
 }/*this is for a div left of text area div, clock hour*/
 
 .past {
@@ -50,7 +50,7 @@ textarea{
 .present {
   background-color: #ff6961;
   color: white;
-}
+}/*need to figure out to use tense classes to correlate to time*/
 
 .future {
   background-color: #77dd77;
