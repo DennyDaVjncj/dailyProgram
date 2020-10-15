@@ -33,19 +33,19 @@ textarea{
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
+  border-top: 1px solid white;
 }
 
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
-}
+}/*this is for a div left of text area div, clock hour*/
 
 .past {
   background-color: #d3d3d3;
   color: white;
-}
+}/*have to get these classes to activate according to time & user completion*/
 
 .present {
   background-color: #ff6961;
