@@ -1,9 +1,8 @@
-let now=moment();//fulfilled requirement
-let nowDisplayed=moment().format('MMM Do YY');
-let thisMoment=$('#currentDay');
-let nowBlock;
+
 //quantifying the present moment
 function presentMoment(){
+    let nowDisplayed=moment().format('MMM Do YY');
+    let thisMoment=$('#currentDay');
     thisMoment.text(nowDisplayed);
 }presentMoment();//quick on the trigger
 
@@ -15,12 +14,4 @@ function presentMoment(){
 //master <div> with styling/dynamo attached
     //gets reproduced winthin .each() upon click of element tagged by #id,.class or whatever
 
-function dynamicDivs(){
-    nowBlock=$("#dynamicMutation");//div element, clientSide
-    console.log(nowBlock)
-    nowBlock.each(this).on("click",function(){
-        $(this).append();
-        console.log(this)
-        //append new div elements
-    });//figure out how to loop through 
-}
+
