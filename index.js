@@ -1,17 +1,24 @@
+//global options
+let now=moment();
+let thisMoment=$('#currentDay');
 
-//quantifying the present moment
 function presentMoment(){
-    let nowDisplayed=moment().format('MMM Do YY');
-    let thisMoment=$('#currentDay');
-    thisMoment.text(nowDisplayed);
+    thisMoment.text(now);
 }presentMoment();//quick on the trigger
 
-//program dynamic time blocks that can take input
-    //color code time blocks to represent past, present, future tasks
-//current hour displayed on side of block, another icon maybe for the other side
-    //each block populates with same theme
+//target .time-block to add dynamic tenses
+//invoke .attr() to affect coloring
+//logic based on <textarea>, checking if .val() is had
+//if statement is checking that <textarea> has value present
+//we have to check for occupying value compared with current time    
 
-//master <div> with styling/dynamo attached
-    //gets reproduced winthin .each() upon click of element tagged by #id,.class or whatever
+let DOM=$(".time-block");//html target to add tenses
+function everyTense(){
+    if($("textarea").val()===true&&now<=){
+        
+    }
+}
+//complete functionality tomorrow!
+
 
 
