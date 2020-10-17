@@ -44,12 +44,13 @@ textarea{
 }/*this is for a div left of text area div, clock hour*/
 
 .past {
-  background-color: #d3d3d3;
+  background-color:lightpink;
   color: white;
 }/*have to get these classes to activate according to time & user completion*/
 
 .present {
-  background-color: #ff6961;
+  background-color: lightblue;
+  opacity: .5;
   color: white;
 }/*need to figure out to use tense classes to correlate to time*/
 

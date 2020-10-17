@@ -1,10 +1,11 @@
 //global options
 let now=moment();
-console.log(now);
+let thisHour=moment().hours();
+console.log(thisHour)//check point
 let thisMoment=$('#currentDay');//displayes real time
 let activityBlock=$(".time-block");//html target to add tenses
 let txtArea=$("textarea");//<textarea>, border
-let hourBlock
+let hourBlock;
 
 //handles moment.js functionality
 function presentMoment(){
@@ -20,12 +21,30 @@ function presentMoment(){
     //each #id representing every hour in workday, gets compared to current time, establishing tense
 //on click of button on far right, <textarea> input needs to be stored to localStorage
 
-//logic for dynamic tenses - set tenses right now
 //.hour is PRIMARY TARGET
-//function for each #id, each time block 
-function everyTense(){    
-    activityBlock;    
-}everyTense();
+function everyTense(){ 
+    activityBlock.each(function(e){
+        let activityTime=parseInt($(e).attr("id"));//quantified this hardCoded block, allwng for dynamic tense
+        console.log(e);
+    if(activityTime<thisHour){
+        $(e).addClass("past");//amazing strategy for dynamic tenses
+    }else if(activityTime===thisHour){
+        $(e).removeClass("past");
+        $(e).addClass("present")
+    }else{
+        $(e).removeClass("past");
+        $(e).removeClass("present");
+        $(e).addClass("future");
+    }
+    });
+}everyTense();//activate set dynamo
+
+//begin logic to store data clientSide
+$("saveBtn").on("click",function(dynamicImpulse){
+    
+})
+
+
 
 // function everyTense(){
 //     if(now)
