@@ -45,17 +45,19 @@ textarea{
 
 .past {
   background-color:lightpink;
+  opacity:0.5;
   color: black;
 }/*have to get these classes to activate according to time & user completion*/
 
 .present {
   background-color: lightblue;
-  opacity: .5;
-  color: white;
+  opacity: 0.5;
+  color: black;
 }/*need to figure out to use tense classes to correlate to time*/
 
 .future {
-  background-color:;
+  background-color:black;
+  opacity: 0.5;
   color: white;
 }
 
