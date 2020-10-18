@@ -6,6 +6,7 @@ let activityBlock = $(".time-block");//html target to add tenses
 let txtArea = $("textarea");//<textarea>, border
 let hourBlock;
 
+
 //handles moment.js functionality
 function presentMoment() {
     thisMoment.text(now);
@@ -20,7 +21,7 @@ function presentMoment() {
 //each #id representing every hour in workday, gets compared to current time, establishing tense
 //on click of button on far right, <textarea> input needs to be stored to localStorage
 
-//.hour is PRIMARY TARGET
+//<textarea> is primary target, in conjunction with the click event
 function everyTense() {
     txtArea.each(function () {
         let activityTime = parseInt($(this).attr("id"));//quantified this hardCoded block, allwng for dynamic tense        
@@ -34,14 +35,20 @@ function everyTense() {
     });
 }everyTense();//triggering our function
 
+
 //begin logic to store data clientSide
 $(".saveBtn").on("click", function () {
-    console.log($(this))    
-    let savedActivity=$(this).siblings("textarea").val()
-    console.log(savedActivity);
-    
+    let savedActivity=$(this).siblings("textarea").val();
     let local=$(this).siblings("textarea").attr("id")
-    localStorage.setItem(local,savedActivity);    
+    localStorage.setItem(local,savedActivity);
 })
 
-//triggers
+$("#9").val(localStorage.getItem("9"));
+$("#10").val(localStorage.getItem("10"));
+$("#11").val(localStorage.getItem("11"));
+$("#12").val(localStorage.getItem("12"));
+$("#13").val(localStorage.getItem("13"));
+$("#14").val(localStorage.getItem("14"));
+$("#15").val(localStorage.getItem("15"));
+$("#16").val(localStorage.getItem("16"));
+$("#17").val(localStorage.getItem("17"))
