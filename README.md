@@ -1,4 +1,4 @@
-# myDailyProgram
+# myDailyProgram: https://dennydavjncj.github.io/myDailyProgram/
 
 Client-side app that will allow a user to program daily activity, logging completed tasks, adding new ones &amp; viewing future tasks. The user will have a dynamic interface allowing them to interpret the tense of their activities...
 
