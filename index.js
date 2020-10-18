@@ -6,7 +6,6 @@ let activityBlock = $(".time-block");//html target to add tenses
 let txtArea = $("textarea");//<textarea>, border
 let hourBlock;
 
-
 //handles moment.js functionality
 function presentMoment() {
     thisMoment.text(now);
@@ -43,6 +42,7 @@ $(".saveBtn").on("click", function () {
     localStorage.setItem(local,savedActivity);
 })
 
+//started throwing paint at the wall, and began noticing the key/value pairs within local storage, which helped inform my guesses, until the data suddenly persisted!
 $("#9").val(localStorage.getItem("9"));
 $("#10").val(localStorage.getItem("10"));
 $("#11").val(localStorage.getItem("11"));
