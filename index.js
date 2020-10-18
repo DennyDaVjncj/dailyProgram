@@ -1,17 +1,15 @@
 //global options
 let now = moment();
 let thisHour = moment().hours();
-
 let thisMoment = $('#currentDay');//displayes real time
 let activityBlock = $(".time-block");//html target to add tenses
 let txtArea = $("textarea");//<textarea>, border
-console.log(txtArea)
 let hourBlock;
 
 //handles moment.js functionality
 function presentMoment() {
     thisMoment.text(now);
-} 
+}presentMoment();//quick on the trigger
 
 //target .time-block to add dynamic tenses
 //invoke .attr() to affect coloring
@@ -34,7 +32,7 @@ function everyTense() {
             $(this).addClass("future");
         }
     });
-}
+}everyTense();//triggering our function
 
 //begin logic to store data clientSide
 $(".saveBtn").on("click", function () {
@@ -47,13 +45,3 @@ $(".saveBtn").on("click", function () {
 })
 
 //triggers
-presentMoment();//quick on the trigger
-everyTense();//activate set dynamo
-
-// function everyTense(){
-//     if(now)
-// }
-//complete functionality before 12am!
-
-
-
